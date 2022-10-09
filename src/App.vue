@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup data lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 
@@ -10,8 +10,8 @@ const selected = ref('')
 
 const languages = ref([
   { language: 'en', title: 'English' },
-  { language: 'es', title: 'Español' },
-  { language: 'fr', title: 'French' }
+  { language: 'ur', title: 'اردو' },
+  { language: 'ar', title: 'عربي' }
 ])
 
 const { t } = useI18n({
@@ -27,7 +27,6 @@ const changeLocale = (locale: string) => {
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <HelloWorld :msg="t('welcome')" />
       <div class="select">
